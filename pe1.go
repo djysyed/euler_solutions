@@ -4,7 +4,6 @@ import "fmt"
 
 
 func three(n int) int {
-
 	total := 0
 	
 	for i := 1; i < n; i++ {
@@ -16,7 +15,6 @@ func three(n int) int {
 }
 
 func five(n int) int {
-
 	total := 0
 
 	for i := 1; i < n; i++ {
@@ -28,7 +26,6 @@ func five(n int) int {
 }
 
 func fifteen(n int) int {
-
 	total := 0
 
 	for i := 1; i < n; i++ {
@@ -38,13 +35,7 @@ func fifteen(n int) int {
 	}
 	return total
 }
-
-
-
 func main() {
-
 	z := three(1000) + five(1000) - fifteen(1000)
 	fmt.Println(z)
-
-	
 }
