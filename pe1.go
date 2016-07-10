@@ -18,7 +18,7 @@ func five(n int) int {
 
 	for i := 1; i < n; i++ {
 		if i%5 == 0 {
-			total += 5
+			total += i
 		}
 	}
 	return total
@@ -29,12 +29,12 @@ func fifteen(n int) int {
 
 	for i := 1; i < n; i++ {
 		if i%15 == 0 {
-			total += 15
+			total += i
 		}
 	}
 	return total
 }
 func main() {
-	z := three(1000) + five(1000) - fifteen(1000)
+	z := three(20) + five(20) - fifteen(20)
 	fmt.Println(z)
 }
